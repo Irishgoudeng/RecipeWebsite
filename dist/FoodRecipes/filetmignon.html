@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Great+Vibes&family=Montserrat:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../output.css">
+
+        <title>Filet Mignon | Recipro</title>
+    </head>
+
+    <body>
+        <section class="bg-black bg-fixed h-auto pb-10 lg:w-full lg:h-screen">
+            <nav class="p-5 pt-2 shadow md:flex md:items-center
+                md:justify-between">
+                <div class="flex justify-between items-center ">
+                    <img class="h-7 inline pl-3"
+                        src="../../img/recipro.png">
+
+                    <span class="text-3xl cursor-pointer mx-2 lg:hidden block
+                        text-white">
+                        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    </span>
+                </div>
+
+                <ul class="xs:flex xs::items-center z-[10] xs:z-auto md:static
+                    sm:bg-white md:bg-black lg:items-center
+                    absolute w-full left-0 md:w-auto md:py-0 md:pl-0 pl-7
+                    md:opacity-100 opacity-0 top-[-400px] transition-all ease-in
+                    duration-500 font-[Montserrat] md:pt-4 ">
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100
+                        hover:before:text-primary-50">
+                        <a href="../index.html" class="text-sm
+                            hover:text-primary-50
+                            md:text-white sm:text-black ">HOME</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0
+                        inline-block
+                        relative
+                        cursor-pointer
+                        hover:text-primary-50
+                        duration-500
+                        before:absolute
+                        before:-bottom-1
+                        before:w-0
+                        before:h-0.5
+                        before:rounded-sm
+                        before:opacity-0
+                        before:transition-all
+                        before:duration-500
+                        before:bg-gradient-to-r
+                        before:from-primary-50
+                        before:via-primary-50
+                        before:to-primary-50
+                        hover:before:w-full
+                        hover:before:opacity-100">
+                        <a href="../index.html#recipes" class="text-sm
+                            hover:text-primary-50
+                            md:text-white sm:text-black ">RECIPES</a>
+                    </li>
+                 
+
+                    <button class=" text-white duration-500
+                        px-6 py-2 mx-4 hover:bg-primary-50 pr-6">
+                        LOG IN
+                    </button>
+
+                </ul>
+            </nav>
+
+            <div class="grid lg:grid-cols-2 lg:items-center justify-items-center
+                gap-5 lg:pt-28">
+                <div class="order-1 lg:order-2 flex flex-col justify-center
+                    items-center">
+                    <p class="text-sm font-[Montserrat] lg:text-4xl pt-5
+                        text-white justify-center text-center">Filet Mignon in
+                        Mushroom Sauce</p>
+
+                </div>
+                <div class="order-2 lg:order-1">
+                    <img class="h-60 w-60 object-cover lg:w-[500px]
+                        lg:h-[500px]" src="../../img/FiletMignon.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <script>
+            function Menu(e){
+              let list = document.querySelector('ul');
+              e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+            }
+          </script>
+        <section id="recipes" style="background-image: url(../../img/bkg.jpg);">
+            <div class=" flex flex-wrap pl-2 pr-2 md:pt-10 md::mr-60 lg:pl-9">
+                <div class="w-full sm:w-1/2">
+                    <h1 class=" text-2xl font-bold lg:text-4xl
+                        text-white">Ingredients
+                    </h1>
+                    <ul class="text-sm font- lg:text-2xl py-3 pl-10
+                        font-[Montserrat] text-white">
+                        <li class="py-5 list-disc ml-6
+                            font-bold">4 Tbsp unsalted butter, divided</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 2 Tbsp olive oil, divided</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 16 oz baby bella mushrooms, thickly
+                            sliced</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1 small onion, finely diced</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 4 garlic cloves, minced</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1 Tbsp fresh thyme, minced (or 1 tsp dry
+                            thyme)</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 24 oz filet mignon (beef tenderloin)
+                            steaks , 6-8 oz each, about 1 1/2" thick</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1/2 cup Merlot wine, or any dry red wine</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1 1/2 cups beef broth</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1/2 cup whipping cream</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1 1/4 tsp sea salt, we use sea salt,
+                            divided</li>
+                        <li class="py-5 list-disc ml-6
+                            font-bold"> 1/2 cup Merlot wine, or any dry red wine</li>
+                    </ul>
+
+                </div>
+                <div class="w-full sm:w-1/2">
+                    <h1 class=" font-bold md:text-4xl
+                        text-white">Procedure
+                    </h1>
+                    <ol class="text-sm font- lg:text-2xl py-3 pl-10
+                        font-[Montserrat] text-white">
+                        <li class="py-5 list-decimal ml-6
+                            font-bold"> Place a large heavy-bottomed pan over
+                            med/high heat and melt in 2 Tbsp butter and 1 Tbsp
+                            oil. Add sliced mushrooms and cook 6 min or until
+                            softened and most of the liquid has evaporated. Add
+                            diced onion and cook 3 min, stirring often.</li>
+                        <li class="py-5 list-decimal ml-6
+                            font-bold"> Add minced garlic, 1 Tbsp thyme, 1/4 tsp
+                            salt and 1/8 tsp black pepper. Cook, stirring
+                            constantly, 2 min or until garlic is fragrant.
+                            Transfer mushrooms to a large plate. Wipe pan clean
+                            with a wet paper towel.</li>
+                        <li class="py-5 list-decimal ml-6
+                            font-bold"> Season steaks all over with 1 tsp salt
+                            and 1/4 tsp black pepper. Place the same pan over
+                            medium/high heat and add 2 Tbsp butter and 1 Tbsp
+                            oil. When the butter is hot and finished foaming,
+                            add seasoned steaks and sear 3-5 min per side for
+                            medium-rare (5-6 min for medium doneness*), turning
+                            once. When steaks reach desired doneness, transfer
+                            them to the plate with mushrooms.</li>
+                        <li class="py-5 list-decimal ml-6
+                            font-bold"> TIn the same pan over med/high heat, add
+                            1/2 cup red wine and boil down until reduced by half
+                            (3 min), scraping the bottom to deglaze. Add 1 1/2
+                            cups beef broth and boil until 2/3 cup of liquid
+                            remains in the pan (5-7 min). Stir in 1/2 cup cream
+                            and boil 2 min or until slightly thickened. Season
+                            sauce to taste with salt and pepper if desired.
+                        </li>
+                        <li class="py-5 list-decimal ml-6
+                            font-bold"> Add steaks and mushrooms back to pan,
+                            spooning some of the sauce over steaks. Once steaks
+                            are just heated through, remove from heat and serve
+                            garnished with fresh sprigs of thyme if desired.
+                        </li>
+                    </ol>
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <section id="recipes" style="background-image: url(../../img/bkg.jpg);"
+            class="pb-5 lg:pb-0">
+            <p class="text-2xl font-[Montserrat] lg:text-7xl text-white
+                text-center pt-9 ">See Recipes</p>
+            <div class="flex h-auto items-center justify-center xs:mx-10 pb-12
+                xs:my-10 lg:mt-7">
+                <div class="grid grid-cols-1 gap-12
+                    lg:grid-cols-4">
+
+                    <div class=" font-[Montserrat] group relative cursor-pointer
+                        items-center
+                        justify-center overflow-hidden transition-shadow
+                        hover:shadow-xl hover:shadow-yellow-600">
+                        <div class="h-96 w-100">
+                            <img class="h-full w-full object-cover
+                                transition-transform duration-500
+                                group-hover:rotate-3 group-hover:scale-125"
+                                src="../../img/panseared.jpg" alt="" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-b
+                            from-transparent via-transparent to-black
+                            group-hover:from-black/70 group-hover:via-black/60
+                            group-hover:to-black/70"></div>
+                        <div class="absolute inset-0 flex translate-y-[60%]
+                            flex-col items-center justify-center px-9
+                            text-center transition-all duration-500
+                            group-hover:translate-y-0">
+                            <h1 class="text-sm font-bold lg:text-lg
+                                text-white">Pan Seared Steak with Garlic Butter</h1>
+                            <p class=" text-xs lg:text-lg italic text-white
+                                opacity-0
+                                transition-opacity duration-300
+                                group-hover:opacity-100">This Pan-Seared Steak
+                                has a garlic butter that makes it taste like a
+                                steakhouse quality meal. You'll be impressed at
+                                how easy it is to make the perfect steak that's
+                                seared on the outside, and perfectly tender
+                                inside..</p>
+                            <a
+                                href="../../dist/FoodRecipes/pansearedsteak.html"><button
+                                    class="rounded-full bg-neutral-900 py-2
+                                    px-3.5 font-com text-sm capitalize
+                                    text-white shadow shadow-black/60">See
+                                    Recipe</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" font-[Montserrat] group relative cursor-pointer
+                        items-center
+                        justify-center overflow-hidden transition-shadow
+                        hover:shadow-xl hover:shadow-yellow-600">
+                        <div class="h-96 w-100">
+                            <img class="h-full w-full object-cover
+                                transition-transform duration-500
+                                group-hover:rotate-3 group-hover:scale-125"
+                                src="../../img/roastchicken.jpg" alt="" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-b
+                            from-transparent via-transparent to-black
+                            group-hover:from-black/70 group-hover:via-black/60
+                            group-hover:to-black/70"></div>
+                        <div class="absolute inset-0 flex translate-y-[60%]
+                            flex-col items-center justify-center px-9
+                            text-center transition-all duration-500
+                            group-hover:translate-y-0">
+                            <h1 class="text-sm font-bold lg:text-lg
+                                text-white">Whole Roasted Chickens</h1>
+                            <p class=" text-xs lg:text-lg italic text-white
+                                opacity-0
+                                transition-opacity duration-300
+                                group-hover:opacity-100">We love roasting 2
+                                chickens at once. It takes almost the same
+                                amount of time and you can enjoy one for dinner
+                                tonight and use the second for meal prepping the
+                                next few days.</p>
+                            <a href="../../dist/FoodRecipes/roastchickens.html"><button
+                                    class="rounded-full bg-neutral-900 py-2
+                                    px-3.5 font-com text-sm capitalize
+                                    text-white shadow shadow-black/60">See
+                                    Recipe</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" font-[Montserrat] group relative cursor-pointer
+                        items-center
+                        justify-center overflow-hidden transition-shadow
+                        hover:shadow-xl hover:shadow-yellow-600">
+                        <div class="h-96 w-100">
+                            <img class="h-full w-full object-cover
+                                transition-transform duration-500
+                                group-hover:rotate-3 group-hover:scale-125"
+                                src="../../img/salmon.jpg" alt="" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-b
+                            from-transparent via-transparent to-black
+                            group-hover:from-black/70 group-hover:via-black/60
+                            group-hover:to-black/70"></div>
+                        <div class="absolute inset-0 flex translate-y-[60%]
+                            flex-col items-center justify-center px-9
+                            text-center transition-all duration-500
+                            group-hover:translate-y-0">
+                            <h1 class="text-sm font-bold lg:text-lg
+                                text-white">Teriyaki Salmon</h1>
+                            <p class=" text-xs lg:text-lg italic text-white
+                                opacity-0
+                                transition-opacity duration-300
+                                group-hover:opacity-100">This teriyaki salmon
+                                recipe is a winner! Simple ingredients and no
+                                lengthy marinating needed. A flaky, juicy and
+                                delicious teriyaki glazed salmon recipe.</p>
+                            <a
+                                href="../../dist/FoodRecipes/teriyakisalmon.html"><button
+                                    class="rounded-full bg-neutral-900 py-2
+                                    px-3.5 font-com text-sm capitalize
+                                    text-white shadow shadow-black/60">See
+                                    Recipe</button>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="font-[Montserrat] group relative cursor-pointer
+                        items-center
+                        justify-center overflow-hidden transition-shadow
+                        hover:shadow-xl hover:shadow-yellow-600">
+                        <div class="h-96 w-100">
+                            <img class="h-full w-full object-cover
+                                transition-transform duration-500
+                                group-hover:rotate-3 group-hover:scale-125"
+                                src="../../img/TuscanChicken.jpg" alt="" />
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-b
+                            from-transparent via-transparent to-black
+                            group-hover:from-black/70 group-hover:via-black/60
+                            group-hover:to-black/70"></div>
+                        <div class="absolute inset-0 flex translate-y-[60%]
+                            flex-col justify-center px-9
+                            text-center transition-all duration-500
+                            group-hover:translate-y-0">
+                            <h1 class="font-dmserif text-sm font-bold lg:text-lg
+                                text-white">Creamy Tuscan Chicken</h1>
+                            <p class=" text-xs lg:text-lg italic text-white
+                                opacity-0
+                                transition-opacity duration-300
+                                group-hover:opacity-100">Pair this Tuscan
+                                Chicken with pasta, rice, or mashed potatoes for
+                                an easy weeknight dinner the entire family will
+                                love! </p>
+                            <a href="../../dist/FoodRecipes/tuscanchicken.html"><button
+                                    class="rounded-full bg-neutral-900 py-2
+                                    px-3.5 font-com text-sm capitalize
+                                    text-white shadow shadow-black/60">See
+                                    Recipe</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </body>
+    <footer class="bg-black">
+        <img class="h-7 pt-0" src="../../img/recipro.png" alt="">
+        <h2 class="text-white text-right text">VWTP All Rights Reserved</h2>
+    </footer>
+</html>
